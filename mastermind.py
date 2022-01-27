@@ -2,7 +2,7 @@
 # Description: This is an implementation of the game Mastermind
 
 import random
-import os
+from os import system, name
 
 
 def display_game_board(secret_code, code_guess, key_pegs):
@@ -48,9 +48,14 @@ def display_game_board(secret_code, code_guess, key_pegs):
 
 def screen_clear():
     """
-    This method clear the screen during game play
+    This method clears the screen during game play
     """
-    os.system("clear")
+    # For Windows systems
+    if name == 'nt':
+        _ = system("cls")
+    # For Mac and Linux systems
+    else:
+        _ = system("clear")
 
 
 if __name__ == '__main__':
