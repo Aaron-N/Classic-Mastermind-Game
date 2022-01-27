@@ -16,3 +16,5 @@ To run the Mastermind game, use the command line:
 python3 mastermind.py
  
 The game then starts and is played in the terminal.
+
+(Screenshots of gameplay are in repository as well to view game without playing)
